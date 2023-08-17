@@ -1,6 +1,34 @@
 ## Resume Shortlisting using NLP and KNN
 
-This project demonstrates an approach to shortlist resumes based on a provided job description using Natural Language Processing (NLP) techniques and the K-Nearest Neighbors (KNN) algorithm.
+This project showcases a comprehensive approach to automate the resume shortlisting process using Natural Language Processing (NLP) techniques and the K-Nearest Neighbors (KNN) algorithm. The combination of these approaches allows efficient and accurate matching of job descriptions with candidate resumes.
+
+### Process Overview
+- Tokenization: Tokenization involves breaking down text into individual words or tokens. This process is crucial for further analysis, as it converts a continuous text into a structured format for manipulation.
+
+- Stemming and Lemmatization: Both stemming and lemmatization aim to reduce words to their base or root forms. Stemming involves removing prefixes or suffixes from words, while lemmatization employs dictionaries to convert words to their base forms.
+
+- Text Preprocessing: This step includes removing non-ASCII characters, converting text to lowercase, eliminating punctuation, and replacing numbers with their English spellings.
+
+- Removing Stopwords: Stopwords are commonly used words like "and," "the," "in," etc., that don't contribute much to the meaning of a sentence. Removing these words helps to focus on content-rich terms.
+
+- Vectorization (TF-IDF): TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical representation of the importance of words in a document relative to a collection of documents. It captures the significance of words within a document compared to their frequency across all documents.
+
+- K-Nearest Neighbors (KNN): KNN is a machine learning algorithm used for classification and regression tasks. In this context, KNN finds the nearest neighbors (similarities) between the vectorized job description and each resume's vector. It calculates the "distance" between vectors and selects the resumes with the closest proximity to the job description.
+
+### Technique Explained
+- Tokenization: Tokenization splits text into individual tokens (words or phrases). It helps in creating a structured representation of textual data for further analysis.
+
+- Stemming: Stemming reduces words to their root form. For example, "running," "runner," and "runs" are all stemmed to "run."
+
+- Lemmatization: Lemmatization converts words to their base or dictionary form. For example, "better" and "best" are lemmatized to "good."
+
+- Text Preprocessing: Removing non-ASCII characters ensures compatibility, while converting to lowercase standardizes the text. Removing punctuation enhances readability, and replacing numbers aids in uniform processing.
+
+- Removing Stopwords: We focus on more meaningful terms by eliminating common words, leading to better analysis results.
+
+- TF-IDF Vectorization: TF-IDF assigns weights to words based on their frequency in a document and across documents. It emphasizes important terms while downplaying common ones.
+
+- KNN Algorithm: KNN measures the distance between vectors to find the "nearest neighbors." In this case, the closest resumes to the job description are shortlisted as potential matches.
 
 ### How to Run the Code
 
@@ -18,7 +46,7 @@ This project demonstrates an approach to shortlist resumes based on a provided j
 3. If any package is missing, install it using similar commands as above.
 4. Make the following changes in the code:- Modify the file paths according to your system for the resume folder and the job description.
 5. you're ready to run the code after these changes and package installations.
-6. Note that there are some comments within the code for debugging purposes, which can be ignored.
+6. Note that some comments within the code for debugging purposes can be ignored.
 
 ### Explanation of the Code
 
